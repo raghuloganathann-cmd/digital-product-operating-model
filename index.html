@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Product Operating Model</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Digital Product Operating Model</h1>
+  <p class="lead">A digital product operating model describes how an organisation plans, funds, builds and runs products so that teams deliver customer and business outcomes continuously. Select a layer to see its practices, roles and measures, then rate your own organisation below.</p>
+
+  <div class="model">
+    <div class="stack" id="layers" role="group" aria-label="Operating model layers"></div>
+    <div class="panel" id="detail" aria-live="polite"></div>
+  </div>
+
+  <section>
+    <h2>Maturity self-assessment</h2>
+    <p class="lead" style="margin-top:0">Rate each layer from 1 (ad hoc) to 5 (optimised).</p>
+    <div class="assess">
+      <div id="rows"></div>
+      <div class="result">
+        <div class="score" id="score">0.0</div>
+        <div style="flex:1;min-width:220px">
+          <div class="stage" id="stage"></div>
+          <p class="next" id="next"></p>
+        </div>
+        <div class="bar" aria-hidden="true"><i id="fill"></i></div>
+      </div>
+    </div>
+  </section>
+  <footer>Starter template: edit the <code>LAYERS</code> array in the script to adapt the model to your organisation.</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
